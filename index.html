@@ -20,25 +20,8 @@
     <header class="bg-dark-800">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
 
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-           <div class=" px-3 py-2 border  bg-[#ABEF5F] rounded-full">
+           <div class="  px-3 py-2 border  bg-[#ABEF5F] rounded-full">
             <i class="fa-solid fa-arrow-up 	rotate-45 "></i>
            </div>
               <a class="btn btn-ghost text-xl font-bold">Rinterio</a>
@@ -57,14 +40,46 @@
 
               </ul>
             </div>
-            <div class="navbar-end flex gap-4">
-               <div class="bg-white-500 border border-white-200 px-2 py-1 rounded-full">
+            <div class="navbar-end flex gap-4 hidden md:flex">
+              <div class="bg-white border border-white-200 px-2 py-1 rounded-full">
                 <i class="fa-solid fa-magnifying-glass"></i>
-               </div>
-                <div class="bg-white-500 border border-white-200 px-2 py-1 rounded-full">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-              <a class="btn bg-[#ABEF5F] rounded-3xl text-black font-bold">Book Consult <i class="fa-solid fa-arrow-up rotate-45"></i></a>
+              </div>
+              <div class="bg-white border border-white-200 px-2 py-1 rounded-full">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <a class="btn bg-[#ABEF5F] rounded-3xl text-black font-bold">
+                Book Consult <i class="fa-solid fa-arrow-up rotate-45"></i>
+              </a>
+            </div>
+
+            <div class="dropdown ml-[80px]">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
             </div>
           </div>
 
@@ -72,7 +87,33 @@
 
 
     <main>
+<!-- hero ssection  -->
 
+<section class="mt-35 mb-35 grid grid-cols-1 justify-center items-center text-center">
+ <!-- image sec  -->
+<div class="flex justify-center">
+<img src="./assets/banner.png" alt="">
+
+</div>
+
+<!-- text sec  -->
+
+<div>
+<h2 class="text-2xl font-bold">
+  A barn house of this design has a <br> striking appearance
+</h2>
+<p class="mt-[10px]">
+  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+</p>
+<button class="flex flex-row bg-[#ABEF5F] p-2 h-12 w-25 rounded-xl ml-[650px] mt-[10px] items-center"> 
+  View Details
+  <div class=" ml-3 w-8 h-7 border  bg-green-300 rounded-full">
+    <i class=" fa-solid fa-arrow-up 	rotate-45 "></i>
+   </div></button>
+  
+</div>
+
+</section>
 
     </main>
 
