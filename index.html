@@ -6,6 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Renterio Website</title>
 
+<!-- goggle font  -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+<!-- font-family  -->
+
+<script>
+  tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  clifford: '#da373d',
+              },
+              fontFamily: {
+                  Manrope: 'Manrope',
+              },
+          },
+      },
+  }
+</script>
+
+
+<style>
+.Manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+</style>
   <!-- font awesome  -->
   <script src="https://kit.fontawesome.com/012965c5ac.js" crossorigin="anonymous"></script>
 
@@ -25,7 +58,7 @@
 
 </head>
 
-<body class="">
+<body class="Manrope">
 
   <div class="navbar bg-base-100">
     <div class="navbar-start w-full">
@@ -33,9 +66,9 @@
       <a class="btn btn-ghost text-xl"> <i
           class="fa-solid fa-arrow-up rounded-full	rotate-45 px-2 py-1 bg-[#ABEF5F] rounded-full "></i>Rinterio</a>
     </div>
-    <div class="navbar-center hidden lg:flex">
+    <div class="navbar-center hidden lg:flex ml-[-520px]">
       <ul class="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
+        <li class="font-bold"><a>Home</a></li>
 
         <li><a>Services</a></li>
 
@@ -54,7 +87,7 @@
           class="fa-solid fa-arrow-up rotate-45 rounded-full bg-black text-white p-3"></i></a>
     </div>
 
-    <div class="dropdown mr">
+    <div class="dropdown mr border rounded-full bg-white border-black-800 text-gray-500 ">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -62,15 +95,15 @@
       </div>
       <ul tabindex="0"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow over right-0">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+        <li><a>Home</a></li>
+
+        <li><a>Services</a></li>
+
+        <li><a>Portfolio</a></li>
+
+        <li><a>Blogs</a></li>
+
+        <li><a>Contact Us</a></li>
       </ul>
     </div>
 
@@ -90,7 +123,7 @@ justify-center items-center text-center">
       <!-- text sec  -->
 
       <div class="flex justify-center flex-col items-center">
-        <h2 class="text-6xl mb-5 font-bold">
+        <h2 class="text-4xl lg:text-6xl mb-5 font-extrabold">
           A barn house of this design has a <br> striking appearance
         </h2>
         <p class="mt-[10px] text-gray-500 p-5">
@@ -112,54 +145,55 @@ justify-center items-center text-center">
 
     <!-- About us section  -->
 
-    <!-- <div class=" bg-gray-100 py-[80px]">
+   
 
 
-      <div class="lg:flex lg:ml-[270px] lg:mb-5 hidden">
+      <div class="mt-10 lg:mb-5 lg:block hidden bg-gray-100 absolute -mb-40 ml-20">
         <img src="./assets/Vector.png" alt="">
-      </div> -->
+      </div> 
 
-    <section class="lg:grid grid-cols-2 gap-5 lg:px-[100px]  py-[50px] bg-gray-100 justify-center">
+    <section class="lg:grid grid-cols-2 gap-5 lg:px-[100px] py-[40px] lg:py-[100px] bg-gray-100 ">
 
 
+      
       <!-- #text section  -->
       <div class="px-5 mb-4 ">
 
-        <div class=" flex flex-col ">
+        <div class=" flex flex-col justify-center text-center items-center lg:justify-start lg:items-start lg:text-start ">
           <button class="bg-white border rounded-full px-4 w-[120px] mb-5">
             <i class="fa-solid fa-arrow-right"></i> About Us
           </button>
 
-          <h2 class="text-3xl font-bold mb-5 px-5">
+          <h2 class="text-5xl font-bold mb-5 ">
             We design thoughtful,<br> liveable spaces
           </h2>
 
-          <p class="mb-5 text-[#494949] px-5">The barn house captivates with its charm and <br>
+          <p class="mb-5 text-[#494949]  ">The barn house captivates with its charm and 
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
 
-        <div class="flex gap-4 bg-white p-2 rounded-lg py-3 mb-4">
+        <div class="flex gap-4 bg-white  px-5 rounded-lg py-3 mb-4">
           <div>
             <img src="./assets/commercial.png" alt="">
           </div>
 
           <div>
-            <h2 class="font-semibold">Commercial</h2>
+            <h2 class="font-bold">Commercial</h2>
 
-            <p class="text-[#494949]">The barn house captivates <br> of rustic charm and modern.</p>
+            <p class="text-[#494949]">The house design are unique and brand new with a bit <br> of rustic charm and modern.</p>
           </div>
 
         </div>
 
-        <div class="flex gap-4 bg-white p-2 rounded-lg items-center ">
+        <div class="flex gap-4 px-5  bg-white p-2 rounded-lg items-center ">
           <div>
             <img src="./assets/commercial.png" alt="">
           </div>
 
           <div>
-            <h2 class="font-semibold">Residintial</h2>
+            <h2 class="font-bold">Residintial</h2>
 
-            <p class="text-[#494949]">There a a lot of options available <br> of rustic design and artitechs.</p>
+            <p class="text-[#494949]">Welcome to the new era of design with vibes  of latest<br> interior desings. </p>
           </div>
 
         </div>
@@ -380,14 +414,14 @@ justify-center items-center text-center">
 
       <!-- text section  -->
       <div class="flex flex-col justify-center text-center items-center mb-8">
-        <div class="bg-[#acef5fb6] px-4 py-1 rounded-full w-fit">
+        <div class="bg-[#acef5f90] px-4 py-1 rounded-full w-fit">
 
-          <button><i class="fa-solid fa-arrow-up rotate-90"></i> lets connect </button>
+          <button><i class="fa-solid fa-arrow-up rotate-90"></i> let's connect </button>
         </div>
 
         <div class="">
 
-          <h1 class="text-3xl font-bold mb-5 mt-5">
+          <h1 class="text-3xl font-bold mb-5 mt-5 w-80 lg:ml-0 ml-8 lg:w-auto">
 
             Let’s Discuss Next Project
           </h1>
@@ -401,7 +435,7 @@ justify-center items-center text-center">
 
       <!-- form section  -->
 
-      <div class="flex flex-col  lg:grid lg:grid-cols-2 gap-5 lg:px-48 ">
+      <div class="flex flex-col  lg:grid lg:grid-cols-2 gap-5 lg:px-48 w-auto">
 
       <input class="px-3 py-3  rounded-3xl" type="text" placeholder="Frst Name*">
       <input class="px-3 py-3 rounded-3xl" type="text" placeholder="Last Name*">
@@ -432,15 +466,15 @@ justify-center items-center text-center">
 
 <div class=" justify-center  text-lg">
   <ul class="text-[#E9E9E9] px-1 lg:flex gap-[120px] mt-[20px] mb-[20px] text-lg">
-    <li class="mb-2"><a>Home</a></li>
+    <li class="mb-4"><a>Home</a></li>
 
-    <li class="mb-2"><a>Services</a></li>
+    <li class="mb-4"><a>Services</a></li>
 
-    <li class="mb-2"><a>Portfolio</a></li>
+    <li class="mb-4"><a>Portfolio</a></li>
 
-    <li class="mb-2"><a>Blogs</a></li>
+    <li class="mb-4"><a>Blogs</a></li>
 
-    <li class="mb-2"><a>Contact Us</a></li>
+    <li class="mb-4"><a>Contact Us</a></li>
 
   </ul>
 </div>
